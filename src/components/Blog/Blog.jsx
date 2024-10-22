@@ -27,7 +27,7 @@ const {id, cover, title, author_img, author, posted_date, reading_time, hashtags
                     hashtags.map((hash, idx) => <span key={idx}><a href="">{hash}</a></span>)
                 }
             </p>
-            <button onClick={()=>{handleMarkAsRead(reading_time)}} className='text-xl font-semibold text-[#6047EC] underline'>Mark as read</button>
+            <button onClick={()=>{handleMarkAsRead(id, reading_time)}} className='text-xl font-semibold text-[#6047EC] underline'>Mark as read</button>
             </div>
         </div>
     );
